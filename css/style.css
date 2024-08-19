@@ -70,6 +70,9 @@ section {
 .contact {
 	min-height: 800px;
 }
+.vdo {
+	height: 500px;
+}
 
 footer {
 	position: absolute;
