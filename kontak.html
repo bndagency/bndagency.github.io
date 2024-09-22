@@ -15,7 +15,19 @@
 <!-- end of Google Analytics -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
 
-
+<!-- google map -->
+<script>
+  function initMap() {
+    const mapContainer = document.getElementById('map-container');
+    const mapOptions = {
+      center: { lat: -7.276485, lng: 112.795814 }, // Ganti dengan koordinat yang diinginkan
+      zoom: 15 // Atur tingkat zoom sesuai kebutuhan
+    };
+  
+    const map = new google.maps.Map(mapContainer, mapOptions);
+  }
+  </script>
+<!-- of to google map -->
     <title>Kontak</title>
   </head>
   <style>
@@ -25,6 +37,11 @@
     background-size: cover;
     background-position: center;
   }
+
+  #map-container {
+  height: 400px; /* Atur tinggi sesuai kebutuhan */
+  width: 100%; /* Lebar bisa disesuaikan, misalnya 600px */
+}
 </style>
 
   <body>
@@ -72,6 +89,15 @@
     <p>Tlp. 0858-5080-4235</p>
   </div>
 </div>
+
+<!-- google map -->
+<div class="container" id="map-container">
+  <div class="col">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.141495581703!2d112.63105917588234!3d-7.449593773415849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e1e8c933a70b%3A0xd75ea2308d741b8e!2sHazanA%20Butik!5e0!3m2!1sen!2sid!4v1726993372235!5m2!1sen!2sid" width="380" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+<br>
+<!-- akhir google map -->
   <!-- footer -->
 <footer>
   <div style="background-color: hwb(0 25% 74%);" class="container text-center">
@@ -90,6 +116,6 @@
 </footer>
 <!-- akhir footer -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  
+      
     </body>
   </html>
